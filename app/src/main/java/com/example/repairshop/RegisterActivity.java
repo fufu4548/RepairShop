@@ -88,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity   {
     }
 
     private void startShopping(/* registered used class */) {
-        Intent intent = new Intent(this, ShopListActivity.class);
+        Intent intent = new Intent(this, RepairListActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }

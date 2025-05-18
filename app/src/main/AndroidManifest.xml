@@ -3,6 +3,11 @@
     package="com.example.repairshop"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +19,7 @@
         android:theme="@style/Theme.RepairShop"
         tools:targetApi="31">
 
-        <activity android:name=".ShopListActivity" />
+        <activity android:name=".RepairListActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity"
             android:exported="true">
@@ -23,6 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddItemActivity" />
+        <activity android:name=".EditItemActivity" />
+        <receiver android:name=".AlarmReceiver" />
+
 
     </application>
 
